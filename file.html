@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Placement Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>College Placement Portal</h1>
+    </header>
+    
+    <section class="form-section">
+      <h2>Student Placement Form</h2>
+      <form id="placementForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="department">Department:</label>
+        <select id="department" name="department">
+          <option value="cs">Computer Science</option>
+          <option value="ai&ds">Artificial Intelligence and Data Science</option>
+          <option value="ml">CSE Machine Learning</option>
+          <option value="ece">Electronics & Communication Engineering</option>
+          <option value="eee">Electrical & Electronics Engineering</option>
+          <option value="mech">Mechanical Engineering</option>
+        </select>
+        
+        <label for="cgpa">CGPA:</label>
+        <input type="number" id="cgpa" name="cgpa" min="0" max="10" step="0.01" required>
+        
+        <label for="skills">Skills:</label>
+        <textarea id="skills" name="skills" placeholder="Enter skills separated by commas" required></textarea>
+        
+        <label for="codechefRank">CodeChef Points above 1200 is eligible</label>
+        <input type="number" id="codechefRank" name="codechefRank" min="1" required>
+        
+        <label for="leetcodeQuestions">Number of LeetCode Questions Solved above 120 is eligible:</label>
+        <input type="number" id="leetcodeQuestions" name="leetcodeQuestions" min="1" required>
+        
+        <label for="internships">Internships (Please list your internships):</label>
+        <textarea id="internships" name="internships" placeholder="Describe your internships or leave blank if none" required></textarea>
+        
+        <label for="projects">Projects (Please list your projects):</label>
+        <textarea id="projects" name="projects" placeholder="Describe your projects or leave blank if none" required></textarea>
+
+        <label for="codechefID">CodeChef ID:</label>
+        <input type="text" id="codechefID" name="codechefID" required>
+
+        <label for="leetcodeID">LeetCode ID:</label>
+        <input type="text" id="leetcodeID" name="leetcodeID" required>
+
+        <label for="arrearsHistory">Do you have a arrears? (Yes/No):</label>
+        <select id="arrearsHistory" name="arrearsHistory">
+          <option value="no">No</option>
+          <option value="yes">Yes</option>
+        </select>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="result-section">
+      <h2>Placement Status</h2>
+      <div id="placementStatus">
+        <!-- Placement result will appear here -->
+      </div>
+    </section>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

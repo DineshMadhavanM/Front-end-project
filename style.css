@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c; /* Dark background */
+    color: #ecf0f1; /* Light text color for contrast */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #3498db; /* Blue color for the title */
+  }
+  
+  h2 {
+    color: #3498db; /* Blue color for the headings */
+  }
+  
+  .form-section, .result-section {
+    background-color: #2c3e50; /* Darker blue background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #34495e; /* Darker border color */
+    border-radius: 4px;
+    background-color: #34495e; /* Dark input background */
+    color: #ecf0f1; /* Light text color in inputs */
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #3498db; /* Blue border when focused */
+    background-color: #2c3e50; /* Darker background when focused */
+  }
+  
+  button {
+    background-color: #2980b9; /* Blue background for buttons */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #3498db; /* Lighter blue when hovering */
+  }
+  
+  #placementStatus {
+    padding: 10px;
+    font-size: 18px;
+    color: #2c3e50; /* Darker blue color */
+    border: 1px solid #34495e; /* Dark border */
+    border-radius: 4px;
+    background-color: #ecf0f1; /* Light background for the result */
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+  }
