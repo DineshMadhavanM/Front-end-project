@@ -1,7 +1,6 @@
 document.getElementById('placementForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent form submission to keep the page from refreshing
-
-  // Get form values
+  event.preventDefault(); 
+  
   const name = document.getElementById('name').value;
   const department = document.getElementById('department').value;
   const cgpa = parseFloat(document.getElementById('cgpa').value);
@@ -14,7 +13,7 @@ document.getElementById('placementForm').addEventListener('submit', function(eve
   const leetcodeID = document.getElementById('leetcodeID').value;
   const arrearsHistory = document.getElementById('arrearsHistory').value;
 
-  // Determine eligibility based on criteria
+  
   let placementStatus = "You are eligible for placement.";
 
   if (cgpa < 7.5) {
@@ -27,7 +26,7 @@ document.getElementById('placementForm').addEventListener('submit', function(eve
     placementStatus = "You are not eligible for placement due to fewer LeetCode questions solved.";
   }
 
-  // Display all form details and placement status
+  
   const resultDiv = document.getElementById('placementStatus');
   resultDiv.innerHTML = `
     <h3>Placement Details</h3>
